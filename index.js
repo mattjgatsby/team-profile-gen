@@ -33,7 +33,9 @@ const questions = [
 
 function init() {
     inquirer.prompt(questions).then((answers) => {
-        
+        fs.writeFile('generatedIndex.html', genHTML(answers), (err) => 
+        err ? console.error(err) : console.log(answers)
+        );
     })
 }
 
