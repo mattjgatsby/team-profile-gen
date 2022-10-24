@@ -61,18 +61,20 @@ const generateTeamHtml = (team) => {
   teamArr.push(
     team
       .filter((employee) => employee.getRole() === "Engineer")
-      .map((engineer) => generateEngineer(engineer)).join("")
+      .map((engineer) => generateEngineer(engineer))
+      .join("")
   );
   teamArr.push(
     team
       .filter((employee) => employee.getRole() === "Intern")
-      .map((intern) => generateIntern(intern)).join("")
+      .map((intern) => generateIntern(intern))
+      .join("")
   );
   return teamArr.join("");
 };
 
-module.exports = team => {
-    return `
+module.exports = (team) => {
+  return `
     <!DOCTYPE html>
 <html lang="en">
 <head>
