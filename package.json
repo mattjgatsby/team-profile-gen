@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -23,7 +24,7 @@
   },
   "homepage": "https://github.com/mattjgatsby/team-profile-gen#readme",
   "dependencies": {
-    "inquirer": "^9.1.4"
+    "inquirer": "^8.2.4"
   },
   "devDependencies": {
     "jest": "^29.2.1"
