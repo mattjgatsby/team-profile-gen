@@ -31,7 +31,7 @@ const generateTeamHtml = (team) => {
                 <ul class="list-group">
                   <li class="list-group-item">ID: ${engineer.getId()}: </li>
                   <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
-                  <li class="list-group-item">Office Number: ${engineer.getOfficeNumber()}</li>
+                  <li class="list-group-item">Github:<a href="https://github.com/${engineer.getGithub()}">${engineer.getGithub()}</a></li>
                 </ul>
                 </div> 
               </div>`;
@@ -47,7 +47,7 @@ const generateTeamHtml = (team) => {
                 <ul class="list-group">
                   <li class="list-group-item">ID: ${intern.getId()}: </li>
                   <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
-                  <li class="list-group-item">Office Number: ${intern.getOfficeNumber()}</li>
+                  <li class="list-group-item">School: ${intern.getSchool()}</li>
                 </ul>
                 </div> 
               </div>`;
@@ -106,3 +106,7 @@ module.exports = (team) => {
 </html>
     `;
 };
+
+// function generateAllHtml() {
+  
+// }
