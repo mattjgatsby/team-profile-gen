@@ -6,12 +6,12 @@ const Employee = require("../lib/Employee");
 const generateTeamHtml = (team) => {
   //create manager card
   const generateManager = (manager) => {
-    return `<div class="card" style="width: 18rem;">
+    return `<div class="card border border-primary" style="width: 18rem;">
                     <div class="card-header">
                         <h4 class="card-title">${manager.getName()}</h4>
                         <h5 class="card-title">${manager.getRole()}</h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body ">
                     <ul class="list-group">
                       <li class="list-group-item">ID: ${manager.getId()}: </li>
                       <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
@@ -22,7 +22,7 @@ const generateTeamHtml = (team) => {
   };
   //create engineer card
   const generateEngineer = (engineer) => {
-    return `<div class="card" style="width: 18rem;">
+    return `<div class="card border border-primary" style="width: 18rem;">
                 <div class="card-header">
                     <h4 class="card-title">${engineer.getName()}</h4>
                     <h5 class="card-title">${engineer.getRole()}</h5>
@@ -38,7 +38,7 @@ const generateTeamHtml = (team) => {
   };
   //create intern card
   const generateIntern = (intern) => {
-    return `<div class="card" style="width: 18rem;">
+    return `<div class="card border border-primary" style="width: 18rem;">
                 <div class="card-header">
                     <h4 class="card-title">${intern.getName()}</h4>
                     <h5 class="card-title">${intern.getRole()}</h5>

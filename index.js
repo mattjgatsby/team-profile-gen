@@ -31,7 +31,6 @@ function employeeSelector() {
           addIntern();
           break;
         case "No more employees":
-          console.log(teamHTML)
           makeADaPizza(answers);
       }
     });
@@ -112,7 +111,6 @@ function addIntern() {
 }
 
 function addEngineer() {
-  console.log("duck");
   inquirer
     .prompt([
       {
